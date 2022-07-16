@@ -1,0 +1,21 @@
+Welcome Admin
+<head>
+<style>
+table, th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+</style>
+</head>
+<table>
+	<thead>
+		<th>username</th>
+		<th>password</th>
+	</thead>
+	<tbody>
+		<tr th:each="user: ${users}">
+			<td th:text="${user.username}" />
+			<td th:text="${user.password}" />
+	</tbody>
+	</tr>
+</table>
